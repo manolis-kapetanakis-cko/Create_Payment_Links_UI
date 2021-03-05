@@ -1,0 +1,51 @@
+#payment-options {
+    width: 450px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    color: #FFF;
+    font-weight: 500;
+    height: 40px;
+    width: 100%;
+    background-color: #13395E;
+    box-shadow: 0 1px 3px 0 rgba(19, 57, 94, 0.4);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23498b;
+    box-shadow: 0 2px 5px 0 rgba(19, 57, 94, 0.4);
+}
+
+div {
+    margin-top: 10px;
+}
+
+input {
+    float: right;
+    width: 250px;
+}
+
+.inner_field {
+    margin-left: 20px
+}
+
+.next_block {
+    margin-top: 15px
+}
+
+.add_product {
+    text-decoration: underline;
+    color: #3737d8;
+    float: right;
+    cursor: pointer;
+}
+
+#new_link {
+    text-decoration: underline;
+    color: green;
+}

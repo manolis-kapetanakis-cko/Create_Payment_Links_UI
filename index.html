@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hosted Payments with APMs</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Payment Options -->
+        <h3>Create Payment Link</h3>
+        <div id="payment-options">
+
+            <!-- currency -->
+            <div>
+                <label for="currency">Currency</label>
+                <input type="text" name="currency" id="currency"
+                    placeholder="Currency">
+            </div>
+            <!-- amount -->
+            <div>
+                <label for="amount">Amount (x100)</label>
+                <input type="text" name="amount" id="amount"
+                    placeholder="Amount">
+            </div>
+            <!-- reference -->
+            <div>
+                <label for="reference">Reference</label>
+                <input type="text" name="reference" id="reference"
+                    placeholder="Reference">
+            </div>
+            <!-- expiry -->
+            <div>
+                <label for="expiry">Expires In (seconds)</label>
+                <input type="text" name="expires_in" id="expires_in"
+                    placeholder="Expires in">
+            </div>
+            <!-- Return URL -->
+            <div>
+                <label for="return_url">Return URL</label>
+                <input type="text" name="return_url" id="return_url"
+                    placeholder="Return URL">
+            </div>
+            <div style="margin-top:15px">
+                <label for="products">Customer</label>
+                <!-- customer name -->
+                <div class="inner_field">
+                    <label for="customer_name">Customer Name</label>
+                    <input type="text" name="customer_name" id="customer_name"
+                        placeholder="Customer Name">
+                </div>
+                <!-- customer email -->
+                <div class="inner_field">
+                    <label for="customer_email">Customer Email</label>
+                    <input type="text" name="customer_email" id="customer_email"
+                        placeholder="Customer Email">
+                </div>
+            </div>
+            <div class="next_block">
+                <label for="products">Billing</label>
+                <!-- Billing address country -->
+                <div class="inner_field">
+                    <label for="billing_country">Billing Country</label>
+                    <input type="text" name="billing_country"
+                        id="billing_country"
+                        placeholder="Billing Country">
+                </div>
+            </div>
+            <!-- Products -->
+            <!-- <div class="next_block">
+                <label for="products">Products</label>
+                <div style="margin-left:20px">
+                    <label for="product_name">Product Name</label>
+                    <input type="text" name="product_name" id="product_name"
+                        placeholder="Product Name">
+                </div>
+                <div class="inner_field">
+                    <label for="product_quantity">Product Quantity</label>
+                    <input type="text" name="product_quantity"
+                        id="product_quantity" placeholder="Product Quantity">
+                </div>
+                <div class="inner_field">
+                    <label for="product_price">Product Price</label>
+                    <input type="text" name="product_price" id="product_price"
+                        placeholder="Product Price">
+                </div>
+                <span class="add_product" onclick="console.log(' product added'
+                    )">add product</span>
+            </div> -->
+            <button onclick="createLink()">Create Link</button>
+        </div>
+
+        <div>
+            <label for="new_link">New payment link: </label>
+            <span id="new_link"></span>
+        </div>
+
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
